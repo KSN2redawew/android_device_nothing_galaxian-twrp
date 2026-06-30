@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/ulefone/thermal
+DEVICE_PATH := device/nothing/galaxian
 
 # Architecture
 TARGET_ARCH := arm64
