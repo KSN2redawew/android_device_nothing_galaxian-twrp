@@ -40,5 +40,6 @@ cc_library_shared {
     static_libs: [
         "libboot_control",
         "libfstab",
+        "libbase",
     ],
 }
