@@ -1,12 +1,18 @@
-### Custom Recovery Tree for the Nothing Phone (3a) Lite (galaxian)
-#### The Linux Kernel binary and it's accompanying modules are provided by [Nothing Technology Limited](https://github.com/NothingOSS) under the GNU Public License
-❤ Credits to [KSN](https://github.com/KSN2redawew) for the Recovery Tree.
+## Features
 
-❤ Big thanks to [LORD | CRAZY_JOKER67](https://github.com/Andreyka445)
+Works:
 
-The Nothing Phone (3a) Lite (codenamed _"galaxian"_) is a mid-range smartphone from Nothing released in early 2025.
+- [X] ADB
+- [X] Display
+- [NO] Decryption
+- [x] Fasbootd 
+- [X] Flashing
+- [idk] MTP
+- [X] Sideload 
+- [IDK] USB OTG
+- [IDK] Touchscreen
 
-## Device specifications
+
 
 Basic   | Spec Sheet
 -------:|:-------------------------
