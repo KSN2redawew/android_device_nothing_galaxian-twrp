@@ -6,7 +6,7 @@ on early-init
 on init
     setprop sys.usb.ffs.aio_compat 1
     setprop sys.usb.configfs 1
-	
+
 on boot
     start boot-hal-1-2
     start health-default
@@ -22,11 +22,12 @@ on post-fs
 
     exec u:r:update_engine:s0 root root -- /system/bin/mtk_plpath_utils	
 	
-# Modules
-on early-init
-    # Load touch-related modules
-    insmod vendor_dlkm/lib/modules/touch_boost.ko
-    insmod vendor_dlkm/lib/modules/touchpanel_event_notify.ko
-	insmod vendor_dlkm/lib/modules/ft3683g.ko
-	insmod vendor_dlkm/lib/modules/mtk_ioctl_touch_boost.ko
-	insmod vendor_dlkm/lib/modules/snd-soc-aw882xx.ko
+on fs
+    start load_modules
+	
+service load_modules /system/bin/load_modules.sh
+    oneshot
+    disabled
+    user root
+    group root
+    seclabel u:r:recovery:s0

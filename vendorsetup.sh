@@ -64,7 +64,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
         # OTA
         export OF_KEEP_DM_VERITY=1
-	export OF_MAINTAINER="galaxian | KSN | Crazy_joker67"
+		export OF_MAINTAINER="galaxian | KSN"
 
 	# Build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
